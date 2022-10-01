@@ -1,1 +1,32 @@
-.button {}
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px 8px;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 33.5px;
+  color: $main;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @media #{$tablet}{
+    width: 263px;
+    padding: 20px 25px 25px;
+  }
+
+  &:hover{
+    background-color: $main;
+    color: $white;
+  }
+}
+
+.button--invert {
+  color: $white;
+  border: 1px solid $white;
+  
+  &:hover{
+    background-color: $main;
+    color: $main;
+  }
+}

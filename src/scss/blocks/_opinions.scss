@@ -1,0 +1,24 @@
+.opinions{
+  padding-top: 50px;
+}
+
+.opinions__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.opinions__info{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.opinions__title {
+  margin-bottom: 20px;
+}
+
+.opinions__text {
+  font-weight: 400;
+  font-size: $font-size-small;
+  line-height: 154.8%;
+  color: #777777;
+}

@@ -54,6 +54,7 @@ const deployFTP = gulp.series(cleanDist, mainTasks, ftp);
 // Экспорт сценариев
 export { dev }
 export { build }
+export { fonts }
 export { deployZIP }
 export { deployFTP }
 

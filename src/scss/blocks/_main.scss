@@ -1,4 +1,8 @@
 .main {
-  padding-top: 70px;
+  // padding-top: 75px;
   flex-grow: 1;
+
+  @media #{$desktop} {
+    // padding-top: 117px;
+  }
 }

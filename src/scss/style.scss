@@ -1,6 +1,6 @@
 // @import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
-// @import "fonts"; // Подключение шрифтов
+@import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
 @import "global"; // Подключение глбальных стилей
 
@@ -13,14 +13,29 @@
 @import "blocks/body";
 @import "blocks/main";
 @import "blocks/container";
+@import "blocks/button";
+@import "blocks/link";
+@import "blocks/title";
 @import "blocks/header";
 @import "blocks/logo";
 @import "blocks/menu";
+@import "blocks/hero";
+@import "blocks/hero-slider";
+@import "blocks/marquee";
+@import "blocks/benefits";
+@import "blocks/actions";
+@import "blocks/production";
+@import "blocks/production-slider";
+@import "blocks/opinions";
+@import "blocks/opinions-slider";
+@import "blocks/information";
+@import "blocks/information-grid";
+@import "blocks/places";
 @import "blocks/footer";
+@import "blocks/social";
+
 @import "blocks/breadcrumbs";
 @import "blocks/pagination";
 @import "blocks/accordion";
 @import "blocks/input-number";
-@import "blocks/title";
-@import "blocks/button";
 @import "blocks/form";

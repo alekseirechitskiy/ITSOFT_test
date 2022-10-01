@@ -1,0 +1,52 @@
+.benefits {
+  padding-top: 50px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__item {
+  padding-left: 100px;
+  position: relative;
+  margin-bottom: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 67px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.benefits__item:first-child {
+  &::before {
+    background-image: url("@img/icons/effect.svg");
+    top: -10px;
+  }
+}
+.benefits__item:nth-child(2) {
+  &::before {
+    background-image: url("@img/icons/dose.svg");
+    top: -10px;
+  }
+}
+.benefits__item:last-child {
+  &::before {
+    background-image: url("@img/icons/pill.svg");
+    top: -10px;
+  }
+}
+
+.benefits__item-text {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $font-size-normal;
+  line-height: 154.8%;
+  color: #242424;
+}

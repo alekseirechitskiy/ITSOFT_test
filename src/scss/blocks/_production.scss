@@ -1,0 +1,21 @@
+.production {
+  background-image: url("@img/production-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.production__title {
+  margin-bottom: 20px;
+}
+
+.production__slider {
+  margin-bottom: 75px;
+}
+
+.production__button {
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  width: 100%;
+}

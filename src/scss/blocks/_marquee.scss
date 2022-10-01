@@ -1,0 +1,32 @@
+.marquee {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $main;
+  padding: 16px 0;
+  border-top: 1px solid $main;
+  border-bottom: 1px solid $main; 
+  overflow-x: hidden;
+}
+
+.marquee__wrapper{
+  display: flex;
+  width: 200%;
+  animation: marquee 3s linear infinite;
+  justify-content: space-evenly;
+}
+
+.marquee__text {
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

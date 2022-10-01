@@ -1,0 +1,62 @@
+.opinions-slider {
+  min-width: 0; 
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0px;
+    line-height: 0;
+  }
+
+  .slick-dots li {
+    padding: 0;
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .slick-dots button {
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid $main;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+  }
+
+  .slick-active button[role="tab"] {
+    background-color: $main;
+  }
+}
+
+.opinions-slider__slide {
+  position: relative;
+}
+
+.opinions-slider__image {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  margin-bottom: 30px;
+}
+
+.opinions-slider__button{
+  padding: 0;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -38px;
+  margin-top: -38px;
+}

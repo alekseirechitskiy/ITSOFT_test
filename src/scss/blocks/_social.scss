@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social__link {
+  svg {
+    path{
+      transition: fill 0.3s;
+      fill: #7A7A7A;
+    }
+  }
+
+  &:hover {
+    path{
+      fill: $main;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.link {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: $font-size-medium;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: $main;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

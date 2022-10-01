@@ -1,0 +1,98 @@
+.hero {
+  background-image: url("@img/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  background-size: contain;
+  height: calc(100vh - 72px);
+
+  @media #{$tablet} {
+    background-image: url("@img/hero-bg-tablet.svg");
+    background-size: cover;
+    background-position: 100%;
+    height: 760px;
+    margin-bottom: 100px;
+  }
+}
+
+.hero__inner {
+  @media #{$tablet} {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero__heading {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 90%;
+  color: $black;
+  max-width: 292px;
+
+  @media #{$tablet} {
+    font-size: 55px;
+    max-width: 360px;
+    margin-bottom: 240px;
+  }
+}
+
+.hero__list {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+  }
+}
+
+.hero__list-item {
+  padding-left: 98px;
+  position: relative;
+  margin-bottom: 75px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+  }
+}
+
+.hero__list-item:first-child {
+  &::before {
+    top: -30px;
+    width: 67px;
+    height: 67px;
+    background-image: url("@img/icons/find.svg");
+  }
+}
+
+.hero__list-item:nth-child(2) {
+  &::before {
+    top: -30px;
+    width: 68px;
+    height: 67px;
+    background-image: url("@img/icons/instruction.svg");
+  }
+}
+
+.hero__list-item:last-child {
+  &::before {
+    top: -30px;
+    width: 68px;
+    height: 80px;
+    background-image: url("@img/icons/wherBuy.svg");
+  }
+}
+
+.hero__list-link {
+  font-size: $font-size-medium;
+  line-height: 21px;
+  color: $main;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hero__button {
+
+}
