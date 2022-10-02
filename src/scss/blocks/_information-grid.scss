@@ -3,12 +3,32 @@
   // gap: 30px;
   gap: 15px;
   grid-template-columns: repeat(1, 1fr);
+
+  @media #{$tablet}{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 263px 165px;
+  }
 }
 
 .information-grid__item {
   display: block;
   position: relative;
   height: 98px;
+  @media #{$tablet}{
+    height: auto;
+  }
+}
+
+.information-grid__item:first-child{
+  @media #{$tablet}{
+    grid-row: span 2; 
+  }
+}
+
+.information-grid__item:last-child{
+  @media #{$tablet}{
+    grid-column: span 2; 
+  }
 }
 
 .information-grid__image-box {
@@ -48,5 +68,9 @@
   line-height: 100%;
   color: $white;
   padding: 29px 17px 29px 29px;
+
+  @media #{$tablet}{
+    font-size: 36px;
+  }
 
 }

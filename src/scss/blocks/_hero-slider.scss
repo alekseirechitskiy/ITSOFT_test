@@ -4,6 +4,10 @@
   margin-top: -10px;
   margin-bottom: 15px;
   position: relative;
+
+  @media #{$tablet} {
+    margin-bottom: 70px;
+  }
   
   .slick-list {
     overflow: hidden;
@@ -28,9 +32,18 @@
     transition: all 0.3s;
 
     @media #{$tablet} {
-      bottom: 200px;
+      bottom: -30px;
       width: 68px;
       height: 68px;
+      border: 1px solid $white;
+
+      svg {
+        width: 14px;
+        height: 27px;
+        path{
+          stroke: $white;
+        }
+      }
     }
 
     &:hover {
@@ -46,6 +59,11 @@
     transform: translateX(-41px);
     text-align: center;
 
+    @media #{$tablet} {
+      transform: translateX(-61px);
+
+    }
+
     svg{
       stroke: $main;
       transform: translate(-1px, 1px);
@@ -53,6 +71,9 @@
   }
 
   .slick-next {
+    @media #{$tablet} {
+      transform: translateX(41px);
+    }
     svg{
       stroke: $main;
       transform: translate(1px, 1px);
@@ -61,5 +82,11 @@
 
   .slider__slide {
     text-align: center;
+  }
+}
+
+.hero-slider__image {
+  @media #{$tablet} {
+    margin-left: -100px;
   }
 }

@@ -63,6 +63,16 @@
   border: none;
   border-radius: 0;
   background-color: transparent;
+  
+  .toggled-line:first-child{
+    transition: transform 0.3s;
+  }
+
+  .toggled-line:last-child{
+    transition: transform 0.3s;
+  }
+
+
   @media #{$tablet}{
     width: 60px;
     height: 40px;
@@ -77,10 +87,16 @@
 }
 
 .header__toggle.header__toggle--close {
-  .toggled-line {
-    transition: all 1s;
-    display: none;
+  .toggled-line:first-child{
+    transform: translateY(8px);
   }
+  .toggled-line:last-child{
+    transform: translateY(-8px);
+  }
+  // .toggled-line {
+  //   transition: all 1s;
+  //   display: none;
+  // }
 }
 
 .header--out {

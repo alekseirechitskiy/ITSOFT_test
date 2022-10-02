@@ -4,16 +4,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media #{$tablet}{
+    padding-top: 243px;
+    padding-bottom: 54px;
+  }
 }
 
 .information__inner {
   display: flex;
   flex-direction: column;
+  @media #{$tablet}{
+    flex-direction: row;
+  }
 }
 
 .information__info {
   width: 100%;
   margin-bottom: 20px;
+
+  @media #{$tablet}{
+    width: 263px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .information__title {
@@ -34,4 +48,11 @@
 .information__grid {
   width: 100%;
   margin-bottom: 35px;
+}
+
+.information__link{
+  @media #{$tablet}{
+    margin: 0;
+    margin-left: auto;
+  }
 }

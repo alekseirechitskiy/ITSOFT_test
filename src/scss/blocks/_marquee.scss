@@ -8,6 +8,11 @@
   border-top: 1px solid $main;
   border-bottom: 1px solid $main; 
   overflow-x: hidden;
+
+  @media #{$tablet} {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 .marquee__wrapper{

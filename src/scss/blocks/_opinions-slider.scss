@@ -59,4 +59,15 @@
   top: 50%;
   margin-left: -38px;
   margin-top: -38px;
+  cursor: pointer;
+  
+  svg{
+    stroke: $main;
+  }
+
+  &:hover {
+    svg{
+      fill: $main;
+    }
+  }
 }

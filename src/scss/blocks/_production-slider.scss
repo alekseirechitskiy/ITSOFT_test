@@ -23,11 +23,20 @@
     border: 1px solid $white;
     cursor: pointer;
     z-index: 5;
+    transition: all 0.3s;
 
     @media #{$tablet} {
       bottom: 200px;
       width: 68px;
       height: 68px;
+      top: 50%;
+      right: -100px;
+      bottom: 0;
+
+      svg {
+        width: 14px;
+        height: 27px;
+      }
     }
 
     &:hover {
@@ -43,18 +52,38 @@
     transform: translateX(-41px);
     text-align: center;
 
+    @media #{$tablet} {
+      transform: translateY(-120%);
+    }
+
     svg{
       stroke: $white;
       transform: translate(-1px, 1px);
     }
-
-
   }
 
   .slick-next {
+    @media #{$tablet} {
+      transform: translateY(20%);
+    }
+
     svg{
       stroke: $white;
       transform: translate(1px, 1px);
+    }
+  }
+
+  .slick-disabled {
+    border: 1px solid rgba($white, 0.3);
+    svg{
+      stroke: rgba($white, 0.3);
+    }
+
+    &:hover{
+      background-color: transparent;
+      svg{
+        stroke: rgba($white, 0.3);
+      }
     }
   }
 }
@@ -63,6 +92,7 @@
   position: relative;
   text-align: center;
   width: 100%;
+  // padding: 60px 15px;
 }
 
 .production-slider__image {

@@ -3,14 +3,36 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media #{$tablet}{
+    padding: 350px 0 126px;
+    margin-top: -200px;
+  }
+}
+
+.production__inner {
+  @media #{$tablet}{
+    display: flex;
+  }
 }
 
 .production__title {
   margin-bottom: 20px;
+
+  @media #{$tablet}{
+    margin-bottom: 0;
+    flex-shrink: 0;
+    width: 315px;
+  }
 }
 
 .production__slider {
   margin-bottom: 75px;
+
+  @media #{$tablet}{
+    margin-right: 100px;
+    margin-bottom: 35px;
+  }
 }
 
 .production__button {
@@ -18,4 +40,14 @@
   margin: 0;
   margin-left: auto;
   width: 100%;
+
+  @media #{$tablet}{
+    color: $white;
+    border: 1px solid $white;
+    width: 263px;
+  
+    &:hover{
+      background-color: $main;
+    }
+  }
 }

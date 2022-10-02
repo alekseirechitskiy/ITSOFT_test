@@ -2,9 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media #{$tablet} {
+    justify-content: flex-start;
+  }
 }
 
 .social__link {
+  @media #{$tablet} {
+    margin-right: 40px;
+  }
+
   svg {
     path{
       transition: fill 0.3s;
@@ -16,5 +24,11 @@
     path{
       fill: $main;
     }
+  }
+}
+
+.social__link:last-child{
+  @media #{$tablet} {
+    margin-right: 0;
   }
 }

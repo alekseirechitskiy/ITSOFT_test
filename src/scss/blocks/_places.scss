@@ -2,6 +2,10 @@
   padding: 70px 0;
   position: relative;
 
+  @media #{$tablet} {
+    padding-top: 100px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -19,14 +23,27 @@
 .places__inner {
   display: flex;
   flex-direction: column;
+
+  @media #{$tablet} {
+    flex-direction: row;
+  }
 }
 
 .places__info {
   width: 100%;
+
+  @media #{$tablet} {
+    width: 240px;
+  }
 }
 
 .places__title {
   margin-bottom: 20px;
+
+  @media #{$tablet} {
+    margin-bottom: 26px;
+    max-width: 100px;
+  }
 }
 
 .places__text {
@@ -37,10 +54,25 @@
   margin-bottom: 20px;
 }
 
+.places__links {
+  @media #{$tablet} {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
 .places__link {
   margin-bottom: 10px;
+  @media #{$tablet}{
+    margin: 0;
+    margin-right: 30px;
+  }
 
   &:last-child {
     margin-bottom: 0;
+    @media #{$tablet}{
+      margin-right: 0;
+    }
   }
 }
