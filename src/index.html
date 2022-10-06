@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+@@include('html/_head.html',{'title': 'Венарус - ITSOFT_test'})
+
+<body class="body">
+  <main class="main">
+
+    @@include('html/_header.html',{})
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__info">
+            <h1 class="hero__heading">
+              Надежный помощник в лечении варикоза
+            </h1>
+            <ul class="hero__list">
+              <li class="hero__list-item">
+                <a class="hero__list-link" href="#">Схема приема</a>
+              </li>
+              <li class="hero__list-item">
+                <a class="hero__list-link" href="#">Инструкция</a>
+              </li>
+              <li class="hero__list-item">
+                <a class="hero__list-link" href="#places">Где купить</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__slider">
+            <div class="hero-slider">
+              <div class="hero-slider__slide">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.png">
+                  <img class="hero-slider__image" src="@img/hero-1-1.png" >
+                </picture>
+              </div>
+              <div class="hero-slider__slide">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.png">
+                  <img class="hero-slider__image" src="@img/hero-1-1.png" >
+                </picture>
+              </div>
+            </div>
+            <a href="#places" class="hero__slider-button button">
+              Где купить >
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="marquee" id="marquee-demo">
+      <div class="marquee__wrapper">
+        <a href="#" class="marquee__text"> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>&nbsp;</a>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__inner">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <p class="benefits__item-text">Доказанная  эффективность</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__item-text">Новая дозировка 100 мг + 900 мг</p>
+            </li>
+            <li class="benefits__item benefits__item--info">
+              <p class="benefits__item-text">
+                Удобный прием.<br> Одна таблетка в сутки*
+              </p>
+              <div class="benefits__item-popup-box">
+                <svg class="benefits__item-info-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14.5" stroke="#47093E"/>
+                  <path d="M14.624 10.648C14.24 10.648 13.936 10.536 13.712 10.312C13.488 10.088 13.376 9.8 13.376 9.448C13.376 9.04267 13.504 8.70667 13.76 8.44C14.016 8.17333 14.3573 8.04 14.784 8.04C15.2107 8.04 15.536 8.15733 15.76 8.392C15.984 8.616 16.096 8.89867 16.096 9.24C16.096 9.66667 15.968 10.008 15.712 10.264C15.456 10.52 15.0987 10.648 14.64 10.648H14.624ZM13.776 13.624L12.64 13.32V12.248L15.568 11.896H15.6L16.048 12.216V19.912L17.12 20.04V21H12.656V20.04L13.776 19.896V13.624Z" fill="#47093E"/>
+                </svg>
+                <p class="benefits__item-popup">
+                  Необходима консультация лечащего врача
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="actions">
+      <div class="container">
+        <div class="actions__inner">
+          <div class="actions__info">
+            <h2 class="actions__title title">Комплексное действие</h2>
+            <p class="actions__text">Венарус показан для терапии симптомов хронических заболеваний вен (устранения и облегчения симптомов).</p>
+          </div>
+          <ul class="actions__list">
+            <li class="actions__item">
+              <a class="actions__item-link link" href="#">Подробнее ></a>
+              <p class="actions__item-text">Помогает предотвратить судороги</p>
+            </li>
+            <li class="actions__item">
+              <a class="actions__item-link link" href="#">Подробнее ></a>
+              <p class="actions__item-text">Способствует снижению тяжести в ногах</p>
+            </li>
+            <li class="actions__item">
+              <a class="actions__item-link link" href="#">Подробнее ></a>
+              <p class="actions__item-text">Способствует снижению болевых ощущений</p>
+            </li>
+            <li class="actions__item">
+              <a class="actions__item-link link" href="#">Подробнее ></a>
+              <p class="actions__item-text">Помогает уменьшить отеки</p>
+            </li>
+            <li class="actions__item">
+              <a class="actions__item-link link" href="#">Подробнее ></a>
+              <p class="actions__item-text">Оказывает ангиопротекторное и венотонизурующее действие</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="production">
+      <div class="container">
+        <div class="production__inner">
+          <h2 class="production__title title">О производстве Венарус</h2>
+          <div class="production__slider">
+            <div class="production-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="production-slider__slide production-slider__slide--empty swiper-slide">
+              </div>
+              <div class="production-slider__slide swiper-slide">
+                <img class="production-slider__image" src="@img/production.jpg" alt="production">
+                <button class="production-slider__slide-button">
+                  <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" stroke="#47093E"/>
+                    <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" stroke="#47093E"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="production-slider__slide swiper-slide">
+                <img class="production-slider__image" src="@img/production.jpg" alt="production">
+                <button class="production-slider__slide-button">
+                  <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" stroke="#47093E"/>
+                    <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" stroke="#47093E"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="production-slider__slide swiper-slide">
+                <img class="production-slider__slide production-slider__image" src="@img/production.jpg" alt="production">
+                <button class="production-slider__slide-button">
+                  <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" stroke="#47093E"/>
+                    <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" stroke="#47093E"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="production-slider__slide swiper-slide">
+                <img class="production-slider__slide production-slider__image" src="@img/production.jpg" alt="production">
+                <button class="production-slider__slide-button">
+                  <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" stroke="#47093E"/>
+                    <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" stroke="#47093E"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="production-slider__slide swiper-slide">
+                <img class="production-slider__slide production-slider__image" src="@img/production.jpg" alt="production">
+                <button class="production-slider__slide-button">
+                  <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" stroke="#47093E"/>
+                    <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" stroke="#47093E"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            </div> 
+          </div>
+          <div class="production-slider__navgation">
+            <button class="production-slider__navgation-prev">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.989848 14.9424L7.83057 8.10171L0.989847 1.26099"/>
+            </svg>
+            </button>
+            <button class="production-slider__navgation-next">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.989848 14.9424L7.83057 8.10171L0.989847 1.26099" stroke="#5B0E58"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <a class="production__button button" href="#">Подробнее ></a>
+      </div>
+    </section>
+    <section class="opinions">
+      <div class="container">
+        <div class="opinions__inner">
+          <div class="opinions__info">
+            <h2 class="opinions__title title">
+              Мнение специалистов
+            </h2>
+            <p class="opinions__text">
+              Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания вен.
+            </p>
+          </div>
+          <div class="opinions__slider opinions-slider">
+            <div class="opinions-slider__slide">
+              <img class="opinions-slider__image" src="@img/opinions.jpg" alt="opinions" width="847" height="570">
+              <button class="opinions-slider__button" type="button" aria-label="проиграть видео">
+                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" />
+                  <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="opinions-slider__slide">
+              <img class="opinions-slider__image" src="@img/opinions.jpg" alt="opinions" width="847" height="570">
+              <button class="opinions-slider__button" type="button" aria-label="проиграть видео">
+                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" />
+                  <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="opinions-slider__slide">
+              <img class="opinions-slider__image" src="@img/opinions.jpg" alt="opinions" width="847" height="570">
+              <button class="opinions-slider__button" type="button" aria-label="проиграть видео">
+                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="33.5" cy="33.5" r="33" fill="white" fill-opacity="0.3" />
+                  <path d="M25.9601 20.4404L48.5801 33.5L25.9601 46.5597L25.9601 20.4404Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="information">
+      <div class="container">
+        <div class="information__wrapper">
+          <div class="information__inner">
+            <div class="information__info">
+              <h2 class="information__title title">Полезная информация</h2>
+              <p class="information__text"><span>ВЕНАРУС</span> — НАДЕЖНЫЙ ПОМОЩНИК В ЛЕЧЕНИИ ВАРИКОЗА, ХРАНИТЕЛЬ ЖЕНСКИХ НОГ НА ПУТИ К ЕЕ МЕЧТЕ!</p>
+            </div>
+            <div class="information__grid information-grid">
+              <a class="information-grid__item" href="#">
+                <p class="information-grid__item-text">
+                  Профилак&shy;тические упражнени
+                </p>
+              </a>
+              <a class="information-grid__item" href="#">
+                <p class="information-grid__item-text">
+                  Диагностика и способы лечения
+                </p>
+              </a>
+              <a class="information-grid__item" href="#">
+                <p class="information-grid__item-text">
+                  Рекомен&shy;дации по питанию
+                </p>
+              </a>
+              <a class="information-grid__item" href="#">
+                <p class="information-grid__item-text">
+                  Факты о варикозе
+                </p>
+              </a>
+            </div>
+          </div>
+          <a class="information__link button" href="#">Подробнее ></a>
+        </div>
+      </div>
+    </section>
+    <section class="places" id="places">
+      <div class="container">
+        <div class="places__inner">
+          <div class="places__info">
+            <h2 class="places__title title">Где купить</h2>
+            <p class="places__text">Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках вашего города</p>
+          </div>
+          <img class="places__image" src="@img/places.png" alt="">
+        </div>
+        <div class="places__links">
+          <a class="places__link button" href="#">apteka.ru</a>
+          <a class="places__link button" href="#">366.ru</a>
+          <a class="places__link button" href="#">stolichki.ru</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('html/_footer.html',{})
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
