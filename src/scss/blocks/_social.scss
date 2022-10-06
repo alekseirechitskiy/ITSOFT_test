@@ -14,9 +14,9 @@
   }
 
   svg {
-    path{
+    path {
       transition: fill 0.3s;
-      fill: #7A7A7A;
+      fill: $grey-footer-first;
     }
   }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.social__link:last-child{
+.social__link:last-child {
   @media #{$tablet} {
     margin-right: 0;
   }

@@ -42,7 +42,7 @@
       border: 1px solid $white;
 
       svg {
-        path{
+        path {
           stroke: $white;
         }
       }
@@ -67,50 +67,28 @@
     &:hover {
       opacity: 0.3;
     }
-
-    // &:hover {
-    //   border-color: rgba($main, 0.3);
-
-    //   svg{
-    //     stroke: rgba($main, 0.3);
-    //   }
-
-    //   @media #{$tablet} {
-    //     border-color: rgba($white, 0.3);
-
-    //     svg{
-    //       opacity: 0.3;
-    //     }
-    //   }
-    // }
   }
 
-  .slick-prev{
+  .slick-prev {
     transform: translateX(-41px);
     text-align: center;
-
-    @media #{$tablet} {
-      // transform: translateX(-61px);
-    }
 
     @media #{$desktop} {
       transform: translateX(-61px);
     }
 
-    svg{
+    svg {
       stroke: $main;
       transform: translate(-1px, 1px);
     }
   }
 
   .slick-next {
-    @media #{$tablet} {
-      // transform: translateX(41px);
-    }
     @media #{$desktop} {
       transform: translateX(41px);
     }
-    svg{
+
+    svg {
       stroke: $main;
       transform: translate(1px, 1px);
     }

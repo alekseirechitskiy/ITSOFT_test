@@ -2,8 +2,6 @@
   margin-left: auto;
 }
 
-
-
 .menu__wrapper {
   z-index: 99;
   position: absolute;
@@ -25,7 +23,6 @@
   transition: all .3s;
 
   @media #{$tablet} {
-    // padding: 224px 150px 104px;
     flex-grow: 1;
     justify-content: space-around;
   }
@@ -35,7 +32,6 @@
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-  // padding: 0 15px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -66,7 +62,7 @@
 }
 
 .menu__link {
-  font-family: 'Merriweather', sans-serif;
+  font-family: $font-family-additional;
   font-size: $font-size-normal;
   line-height: 100%;
   transition: color .3s;

@@ -5,37 +5,31 @@
   background-size: cover;
   background-position: 0 0;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     padding-top: 180px;
-
-    // padding-top: 243px;
-    // padding-top: 115px;
-    // padding-bottom: 54px;
-    
   }
 
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     padding-top: 50px;
     margin-top: -40px;
   }
 
-  @media #{$desktop-large}{
+  @media #{$desktop-large} {
     background-size: cover;
     background-position:  center;
   }
 }
 
 .information__wrapper {
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     padding-top: 20%;
     padding-bottom: 5%;
   }
 
-  @media #{$desktop-large}{
+  @media #{$desktop-large} {
     padding-top: 25%;
     padding-bottom: 24%;
   }
-
 }
 
 .information__inner {
@@ -44,7 +38,7 @@
   display: flex;
   flex-direction: column;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     flex-direction: row;
     margin-bottom: 35px;
   }
@@ -54,7 +48,7 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     width: 263px;
     margin-right: 30px;
     margin-bottom: 0;
@@ -81,10 +75,10 @@
   margin-bottom: 20px;
 }
 
-.information__link{
+.information__link {
   @include btn($main, $main);
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     margin: 0;
     margin-left: auto;
   }

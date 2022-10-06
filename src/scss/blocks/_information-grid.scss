@@ -3,12 +3,12 @@
   gap: 15px;
   grid-template-columns: repeat(1, 1fr);
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 165px);
   }
 
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 263px 165px;
   }
@@ -23,34 +23,34 @@
   background-position: top;
   background-size: cover;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     height: auto;
   }
 }
 
-.information-grid__item:first-child{
+.information-grid__item:first-child {
   background-image: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%), url("@img/information-1.jpg");
  
-  @media #{$tablet}{
+  @media #{$tablet} {
     grid-row: span 3; 
   }
 
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     grid-row: span 2; 
   }
 }
 
-.information-grid__item:nth-child(2){
+.information-grid__item:nth-child(2) {
   background-image: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%), url("@img/information-2.jpg");
 }
 
-.information-grid__item:nth-child(3){
+.information-grid__item:nth-child(3) {
   background-image: linear-gradient(179.96deg, rgba(71, 9, 62, 0.9) -0.95%, rgba(71, 9, 62, 0) 99.97%), url("@img/information-3.jpg");
   background-position: center;
 }
 
-.information-grid__item:last-child{
-  @media #{$desktop-mid}{
+.information-grid__item:last-child {
+  @media #{$desktop-mid} {
     grid-column: span 2; 
   }
 }
@@ -64,11 +64,10 @@
   color: $white;
   padding: 29px 17px 29px 29px;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     font-size: 26px;
   }
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     font-size: 36px;
   }
-
 }

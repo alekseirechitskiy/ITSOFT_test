@@ -1,0 +1,20 @@
+@mixin btn ($border-color, $text-color) {
+  border-color: $border-color;
+  color: $text-color;
+  
+  &:hover{
+    border-color: rgba($border-color, 0.3);
+    color: rgba($text-color, 0.3);
+  }
+}
+
+@mixin btn-solid ($border-color, $text-color, $bg-color) {
+  border-color: $border-color;
+  color: $text-color;
+  background-color: $bg-color;
+  
+  &:hover{
+    color: $bg-color;
+    background-color: $text-color;
+  }
+}

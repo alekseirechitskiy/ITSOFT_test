@@ -2,7 +2,7 @@
   z-index: 99999;
   background-color: transparent;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     position: absolute;
     background-color: transparent;
     width: 100%;
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     padding: 30px 0;
   }
 }
@@ -24,45 +24,46 @@
   text-align: right;
   margin-right: 14px;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     margin-right: 44px;
   }
 
-  a{
+  a {
     margin-right: 9px;
 
-    @media #{$tablet}{
+    @media #{$tablet} {
       margin-right: 51px;
     }
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
 }
 
-.header__link--search{
-  svg{
-    @media #{$tablet}{
+.header__link--search {
+  svg {
+    @media #{$tablet} {
       width: 48px;
       height: 47px;
     }
   }
 }
 
-.header__link--location{
-  svg{
-    @media #{$tablet}{
+.header__link--location {
+  svg {
+    @media #{$tablet} {
       width: 42px;
       height: 49px;
     }
-    @media #{$desktop-large}{
-      path{
+
+    @media #{$desktop-large} {
+      path {
         stroke: $white;
       }
     }
-    @media #{$desktop-large} and (min-height: 1080px){
-      path{
+    @media #{$desktop-large} and (min-height: 1080px) {
+      path {
         stroke: $main;
       }
     }
@@ -80,28 +81,28 @@
   border-radius: 0;
   background-color: transparent;
   
-  .toggled-line:first-child{
+  .toggled-line:first-child {
     transition: transform 0.3s;
   }
 
-  .toggled-line:last-child{
+  .toggled-line:last-child {
     transition: transform 0.3s;
   }
 
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     width: 60px;
     height: 40px;
   }
-    
+
   svg{
-    @media #{$tablet}{
+    @media #{$tablet} {
       width: 60px;
       height: 40px;
     }
 
-    path{
-      @media #{$desktop-large}{
+    path {
+      @media #{$desktop-large} {
         stroke: $white;
       }
     }
@@ -109,17 +110,17 @@
 }
 
 .header__toggle.header__toggle--close {
-  .toggled-line:first-child{
+  .toggled-line:first-child {
     transform: translateY(8px);
   }
   
-  .toggled-line:last-child{
+  .toggled-line:last-child {
     transform: translateY(-8px);
   }
 
-  svg{
-    path{
-      @media #{$desktop-large}{
+  svg {
+    path {
+      @media #{$desktop-large} {
         stroke: $main;
       }
     }

@@ -250,12 +250,10 @@
   text-align: left;
 
   @media #{$tablet} {
-    // max-width: 360px;
     font-size: 30px;
   }
 
   @media #{$desktop} {
     width: 360px;
-    // font-size: 30px;
   }
 }

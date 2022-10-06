@@ -1,8 +1,8 @@
 .marquee {
   overflow: hidden;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
   text-transform: uppercase;
   color: $main;
   padding: 16px 0;
@@ -26,18 +26,3 @@
   white-space: nowrap;
   width: 100%;
 }
-
-// .my-marquee {
-//   overflow: hidden;
-// }
-
-// .my-marquee > div {
-//   display: inline-flex;
-//   position: relative;
-// }
-
-// .marquee-jq {
-//   width: 100%; /* the plugin works for responsive layouts so width is not necessary */
-//   overflow: hidden;
-//   border: 1px solid #ccc;
-// }

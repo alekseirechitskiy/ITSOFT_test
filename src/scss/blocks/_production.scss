@@ -4,13 +4,13 @@
   background-size: contain;
   background-position: center 40%;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     padding: 25% 0 25%;
     height: 858px;
     margin-top: -200px;
   }
 
-  @media #{$desktop-large}{
+  @media #{$desktop-large} {
     background-size: cover;
     padding: 30% 0 30%;
   }
@@ -21,12 +21,12 @@
   flex-direction: column;
   min-width: 0;
   
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     min-width: 0;
     flex-direction: row;
   }
 
-  @media #{$desktop-large}{
+  @media #{$desktop-large} {
     margin-top: -100px;
   }
 }
@@ -34,11 +34,11 @@
 .production__title {
   margin-bottom: 20px;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     width: 100%;
   }
 
-  @media #{$desktop}{
+  @media #{$desktop} {
     margin-bottom: 0;
     flex-shrink: 0;
     width: 315px;
@@ -48,18 +48,19 @@
 .production__slider {
   min-width: 0;
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     max-width: 760px;
     height: 270px;
     align-self: end;
   }
 
-  @media #{$desktop}{
+  @media #{$desktop} {
     height: 270px;
     max-width: 780px;
     margin-left: -30px;
   }
-  @media #{$desktop-mid}{
+
+  @media #{$desktop-mid} {
     margin-right: 30px;
     margin-left: -53px;
   }
@@ -72,11 +73,11 @@
   width: 100%;
   @include btn($main, $main);
 
-  @media #{$tablet}{
+  @media #{$tablet} {
     width: 263px;
   }
 
-  @media #{$desktop-mid}{
+  @media #{$desktop-mid} {
     margin-top: 25px;
     @include btn($white, $white);
   }

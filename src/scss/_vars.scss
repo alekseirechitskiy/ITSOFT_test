@@ -8,16 +8,16 @@ $tablet: "(min-width: 768px)";
 $white: #ffffff;
 $black: #000000;
 
-$blue-stone: #005A5A;
-
-$main: #5B0E58;;
-$accent: $blue-stone;
-
+$main: #5B0E58;
+$grey-text: #777777;
+$grey-footer-first: #7A7A7A;
+$grey-footer-second: #828282;
 
 
 // === Fonts ===
-$font-family-default: "Roboto";
-$font-family-additional: "Merriweather";
+$font-family-default: "Roboto", sans-serif;
+$font-family-additional: "Merriweather", serif;
+
 
 // === Fonts sizes ===
 $font-size-normal: 16px;
@@ -26,6 +26,7 @@ $font-size-large: 20px;
 $font-size-medium: 18px;
 $font-size-small: 14px;
 $font-size-extraSmall: 12px;
+
 
 // === Line heights ===
 $line-height-normal: 20px;

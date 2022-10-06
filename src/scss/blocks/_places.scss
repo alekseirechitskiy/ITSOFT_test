@@ -54,7 +54,7 @@
   font-weight: 400;
   font-size: $font-size-small;
   line-height: 154.8%;
-  color: #777777;
+  color: $grey-text;
   margin-bottom: 20px;
 }
 
@@ -76,13 +76,14 @@
   margin-bottom: 10px;
   @include btn-solid($main, $main, $white);
 
-  @media #{$desktop}{
+  @media #{$desktop} {
     margin: 0;
     margin-right: 30px;
   }
 
   &:last-child {
     margin-bottom: 0;
+
     @media #{$desktop} {
       margin-right: 0;
     }

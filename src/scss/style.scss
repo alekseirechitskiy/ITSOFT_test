@@ -3,6 +3,7 @@
 @import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
 @import "global"; // Подключение глбальных стилей
+@import "mixins"; // Подключение миксинов
 
 /*
 * blocks
@@ -25,7 +26,6 @@
 @import "blocks/benefits";
 @import "blocks/actions";
 @import "blocks/production";
-// @import "blocks/swiper";
 @import "blocks/production-slider";
 @import "blocks/opinions";
 @import "blocks/opinions-slider";
@@ -34,9 +34,3 @@
 @import "blocks/places";
 @import "blocks/footer";
 @import "blocks/social";
-
-@import "blocks/breadcrumbs";
-@import "blocks/pagination";
-@import "blocks/accordion";
-@import "blocks/input-number";
-@import "blocks/form";
