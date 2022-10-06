@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
 
-  @media #{$tablet}{
+  @media #{$desktop}{
     flex-direction: row;
     justify-content: space-between;
   }
@@ -20,10 +20,12 @@
 .benefits__item {
   padding-left: 100px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 
-  @media #{$tablet}{
+  @media #{$desktop}{
     max-width: 262px;
+    margin-bottom: 50px;
+
   }
 
   &::before {
@@ -39,15 +41,48 @@
   &--info {
     max-width: 360px;
     padding-right: 35px;
+  }
+}
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 30px;
-      right: 0;
-      bottom: -4px;
-      background-image: url("@img/icons/info.svg");
+.benefits__item-popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  position: absolute;
+  width: 300px;
+  top: 40px;
+  left: -270px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid $main;
+  font-size: $font-size-small;
+  background-color: $white;
+
+  &::before{
+    position: absolute;
+    content:"";
+    top: -6px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $main;
+    border-right: none;
+    border-bottom: none;
+    background-color: $white;
+    transform: rotate(45deg);
+  }
+}
+
+.benefits__item-popup-box{
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  cursor: pointer;
+
+  &:hover{
+    .benefits__item-popup {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
@@ -58,13 +93,16 @@
     top: -10px;
   }
 }
+
 .benefits__item:nth-child(2) {
   &::before {
     background-image: url("@img/icons/dose.svg");
     top: -10px;
   }
 }
+
 .benefits__item:last-child {
+  margin-bottom: 20px;
   &::before {
     background-image: url("@img/icons/pill.svg");
     top: -10px;

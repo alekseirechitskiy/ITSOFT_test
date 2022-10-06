@@ -56,6 +56,9 @@
     ],
     "dependencies": {
         "jquery": "^3.6.1",
-        "slick-carousel": "^1.8.1"
+        "jquery.marquee": "^1.6.0",
+        "sass-loader": "^13.0.2",
+        "slick-carousel": "^1.8.1",
+        "swiper": "^8.4.2"
     }
 }

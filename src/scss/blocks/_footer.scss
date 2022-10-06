@@ -26,6 +26,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  @media #{$desktop} {
     column-gap: 112px;
   }
 }
@@ -62,17 +66,16 @@
 
 .footer__developer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+
 
   @media #{$tablet} {
     justify-content: flex-start;
   }
 
   svg {
-    @media #{$tablet}{
-      margin-right: 15px;
-      flex-shrink: 0;
-    }
+    margin-right: 15px;
+    flex-shrink: 0;
     
     path {
       transition: fill 0.3s;

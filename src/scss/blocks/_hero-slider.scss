@@ -2,10 +2,16 @@
   min-width: 0;
   text-align: center;
   margin-top: -10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
 
   @media #{$tablet} {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -15px;
     margin-bottom: 70px;
   }
   
@@ -20,7 +26,7 @@
   .slick-arrow {
     padding: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     width: 34px;
     height: 34px;
     text-align: center;
@@ -32,27 +38,51 @@
     transition: all 0.3s;
 
     @media #{$tablet} {
-      bottom: -30px;
-      width: 68px;
-      height: 68px;
+      bottom: -10px;
       border: 1px solid $white;
 
       svg {
-        width: 14px;
-        height: 27px;
         path{
           stroke: $white;
         }
       }
     }
 
-    &:hover {
-      background-color: $main;
+    @media #{$desktop} {
+      bottom: -10px;
+      border: 1px solid $white;
 
-      svg{
-        stroke: $white;
+      svg {
+        width: 14px;
+        height: 27px;
       }
     }
+
+    @media #{$desktop} {
+      bottom: -30px;
+      width: 68px;
+      height: 68px;
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    // &:hover {
+    //   border-color: rgba($main, 0.3);
+
+    //   svg{
+    //     stroke: rgba($main, 0.3);
+    //   }
+
+    //   @media #{$tablet} {
+    //     border-color: rgba($white, 0.3);
+
+    //     svg{
+    //       opacity: 0.3;
+    //     }
+    //   }
+    // }
   }
 
   .slick-prev{
@@ -60,8 +90,11 @@
     text-align: center;
 
     @media #{$tablet} {
-      transform: translateX(-61px);
+      // transform: translateX(-61px);
+    }
 
+    @media #{$desktop} {
+      transform: translateX(-61px);
     }
 
     svg{
@@ -72,6 +105,9 @@
 
   .slick-next {
     @media #{$tablet} {
+      // transform: translateX(41px);
+    }
+    @media #{$desktop} {
       transform: translateX(41px);
     }
     svg{

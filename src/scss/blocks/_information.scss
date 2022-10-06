@@ -3,19 +3,50 @@
   background-image: url("@img/information-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 0;
 
   @media #{$tablet}{
-    padding-top: 243px;
-    padding-bottom: 54px;
+    padding-top: 180px;
+
+    // padding-top: 243px;
+    // padding-top: 115px;
+    // padding-bottom: 54px;
+    
+  }
+
+  @media #{$desktop-mid}{
+    padding-top: 50px;
+    margin-top: -40px;
+  }
+
+  @media #{$desktop-large}{
+    background-size: cover;
+    background-position:  center;
   }
 }
 
+.information__wrapper {
+  @media #{$desktop-mid}{
+    padding-top: 20%;
+    padding-bottom: 5%;
+  }
+
+  @media #{$desktop-large}{
+    padding-top: 25%;
+    padding-bottom: 24%;
+  }
+
+}
+
 .information__inner {
+  flex-shrink: 0;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+
   @media #{$tablet}{
     flex-direction: row;
+    margin-bottom: 35px;
   }
 }
 
@@ -47,10 +78,12 @@
 
 .information__grid {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .information__link{
+  @include btn($main, $main);
+
   @media #{$tablet}{
     margin: 0;
     margin-left: auto;

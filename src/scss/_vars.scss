@@ -1,5 +1,7 @@
 //  === Screen widths  ===
-$desktop: "(min-width: 1280px)";
+$desktop-large: "(min-width: 1441px)";
+$desktop-mid: "(min-width: 1280px)";
+$desktop: "(min-width: 1024px)";
 $tablet: "(min-width: 768px)";
 
 //  === Colors ===
@@ -10,6 +12,7 @@ $blue-stone: #005A5A;
 
 $main: #5B0E58;;
 $accent: $blue-stone;
+
 
 
 // === Fonts ===

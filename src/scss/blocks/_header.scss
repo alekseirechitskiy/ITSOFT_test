@@ -1,6 +1,12 @@
 .header {
   z-index: 99999;
   background-color: transparent;
+
+  @media #{$tablet}{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+  }
 }
 
 .header__inner {
@@ -50,6 +56,16 @@
       width: 42px;
       height: 49px;
     }
+    @media #{$desktop-large}{
+      path{
+        stroke: $white;
+      }
+    }
+    @media #{$desktop-large} and (min-height: 1080px){
+      path{
+        stroke: $main;
+      }
+    }
   }
 }
 
@@ -83,6 +99,12 @@
       width: 60px;
       height: 40px;
     }
+
+    path{
+      @media #{$desktop-large}{
+        stroke: $white;
+      }
+    }
   }
 }
 
@@ -90,13 +112,18 @@
   .toggled-line:first-child{
     transform: translateY(8px);
   }
+  
   .toggled-line:last-child{
     transform: translateY(-8px);
   }
-  // .toggled-line {
-  //   transition: all 1s;
-  //   display: none;
-  // }
+
+  svg{
+    path{
+      @media #{$desktop-large}{
+        stroke: $main;
+      }
+    }
+  }
 }
 
 .header--out {

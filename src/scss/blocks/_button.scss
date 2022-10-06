@@ -1,23 +1,49 @@
+@mixin btn ($border-color, $text-color) {
+  border-color: $border-color;
+  color: $text-color;
+  
+  &:hover{
+    border-color: rgba($border-color, 0.3);
+    color: rgba($text-color, 0.3);
+  }
+}
+
+@mixin btn-solid ($border-color, $text-color, $bg-color) {
+  border-color: $border-color;
+  color: $text-color;
+  background-color: $bg-color;
+  
+  &:hover{
+    color: $bg-color;
+    background-color: $text-color;
+  }
+}
+
 .button {
   display: block;
   margin: 0 auto;
   padding: 10px 25px 8px;
   background-color: transparent;
   border: 1px solid $main;
-  border-radius: 33.5px;
   color: $main;
+  border-radius: 33.5px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s;
 
   @media #{$tablet}{
     width: 263px;
+    padding: 20px 10px 20px;
+  }
+
+  @media #{$desktop}{
+    width: 263px;
     padding: 20px 25px 25px;
   }
 
   &:hover{
-    background-color: $main;
-    color: $white;
+    border-color: rgba($white, 0.3);
+    color: rgba($white, 0.3);
   }
 }
 
@@ -26,7 +52,10 @@
   border: 1px solid $white;
   
   &:hover{
-    background-color: $main;
-    color: $main;
+    opacity: 0.3;
+
+    // border-color: rgba($white, 0.3);
+    // color: rgba($white, 0.3);
   }
 }
+

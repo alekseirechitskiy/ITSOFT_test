@@ -1,18 +1,33 @@
 .production {
   background-image: url("@img/production-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center 40%;
 
   @media #{$tablet}{
-    padding: 350px 0 126px;
+    padding: 25% 0 25%;
+    height: 858px;
     margin-top: -200px;
+  }
+
+  @media #{$desktop-large}{
+    background-size: cover;
+    padding: 30% 0 30%;
   }
 }
 
 .production__inner {
-  @media #{$tablet}{
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  
+  @media #{$desktop-mid}{
+    min-width: 0;
+    flex-direction: row;
+  }
+
+  @media #{$desktop-large}{
+    margin-top: -100px;
   }
 }
 
@@ -20,6 +35,10 @@
   margin-bottom: 20px;
 
   @media #{$tablet}{
+    width: 100%;
+  }
+
+  @media #{$desktop}{
     margin-bottom: 0;
     flex-shrink: 0;
     width: 315px;
@@ -27,11 +46,22 @@
 }
 
 .production__slider {
-  margin-bottom: 75px;
+  min-width: 0;
 
   @media #{$tablet}{
-    margin-right: 100px;
-    margin-bottom: 35px;
+    max-width: 760px;
+    height: 270px;
+    align-self: end;
+  }
+
+  @media #{$desktop}{
+    height: 270px;
+    max-width: 780px;
+    margin-left: -30px;
+  }
+  @media #{$desktop-mid}{
+    margin-right: 30px;
+    margin-left: -53px;
   }
 }
 
@@ -40,14 +70,14 @@
   margin: 0;
   margin-left: auto;
   width: 100%;
+  @include btn($main, $main);
 
   @media #{$tablet}{
-    color: $white;
-    border: 1px solid $white;
     width: 263px;
-  
-    &:hover{
-      background-color: $main;
-    }
+  }
+
+  @media #{$desktop-mid}{
+    margin-top: 25px;
+    @include btn($white, $white);
   }
 }

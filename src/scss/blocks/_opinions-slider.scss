@@ -27,8 +27,12 @@
     border-radius: 50%;
     border: 1px solid $main;
     background-color: transparent;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
+    @media #{$tablet}{
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .slick-active button[role="tab"] {
@@ -60,14 +64,13 @@
   margin-left: -38px;
   margin-top: -38px;
   cursor: pointer;
+  transition: opacity 0.3s;
   
   svg{
     stroke: $main;
   }
 
   &:hover {
-    svg{
-      fill: $main;
-    }
+    opacity: 0.3;
   }
 }

@@ -1,4 +1,5 @@
 .marquee {
+  overflow: hidden;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
@@ -10,16 +11,15 @@
   overflow-x: hidden;
 
   @media #{$tablet} {
+    margin-top: 50px;
     font-size: 48px;
     line-height: 56px;
   }
 }
 
 .marquee__wrapper{
-  display: flex;
-  width: 200%;
-  animation: marquee 3s linear infinite;
-  justify-content: space-evenly;
+  display: inline-flex;
+  position: relative;
 }
 
 .marquee__text {
@@ -27,11 +27,17 @@
   width: 100%;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+// .my-marquee {
+//   overflow: hidden;
+// }
+
+// .my-marquee > div {
+//   display: inline-flex;
+//   position: relative;
+// }
+
+// .marquee-jq {
+//   width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+//   overflow: hidden;
+//   border: 1px solid #ccc;
+// }
