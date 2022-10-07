@@ -2,7 +2,7 @@
   padding-top: 50px;
 
   @media #{$tablet}{
-    padding-top: 113px;
+    padding-top: 111px;
   }
 }
 
@@ -14,15 +14,18 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
 
 .benefits__item {
-  padding-left: 100px;
+  padding-left: 60px;
   position: relative;
   margin-bottom: 70px;
+  
+  @media #{$tablet} {
+    padding-left: 97px;
+  }
 
-  @media #{$desktop}{
+  @media #{$desktop} {
     max-width: 262px;
     margin-bottom: 50px;
   }
@@ -30,17 +33,30 @@
   &::before {
     position: absolute;
     content: "";
-    width: 68px;
-    height: 67px;
+    width: 48px;
+    height: 47px;
     top: 0;
     left: 0;
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media #{$tablet} {
+      width: 68px;
+      height: 67px;
+    }
   }
 
   &--info {
     max-width: 360px;
-    padding-right: 35px;
+    
+    @media #{$tablet} {
+      padding-right: 35px;
+    }
   }
+}
+
+.benefits__item-info-icon {
+  vertical-align: bottom;
 }
 
 .benefits__item-popup {
@@ -74,9 +90,19 @@
 
 .benefits__item-popup-box{
   position: absolute;
-  right: 0;
-  bottom: -7px;
+  left: 250px;
+  bottom: 0;
   cursor: pointer;
+
+  @media #{$tablet} {
+    left: auto;
+    bottom: 0;
+    right: 0;
+  }
+  @media #{$desktop} {
+    right: -5px;
+    bottom: 27px;
+  }
 
   &:hover{
     .benefits__item-popup {
@@ -89,30 +115,39 @@
 .benefits__item:first-child {
   &::before {
     background-image: url("@img/icons/effect.svg");
-    top: -10px;
+    top: -9px;
   }
 }
 
 .benefits__item:nth-child(2) {
   &::before {
     background-image: url("@img/icons/dose.svg");
-    top: -10px;
+    top: -5px;
   }
 }
 
 .benefits__item:last-child {
   margin-bottom: 20px;
+
+  @media #{$desktop}{
+    margin-right: 25px;
+  }
+
   &::before {
     background-image: url("@img/icons/pill.svg");
-    top: -10px;
+    top: -3px;
   }
 }
 
 .benefits__item-text {
-  font-family: 'Merriweather';
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: 700;
-  font-size: $font-size-normal;
+  font-size: $font-size-small;
   line-height: 154.8%;
-  color: #242424;
+  color: $black-additional;
+
+  @media #{$tablet} {
+    font-size: $font-size-normal;
+  }
 }

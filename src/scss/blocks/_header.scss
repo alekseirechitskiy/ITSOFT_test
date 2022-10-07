@@ -10,26 +10,29 @@
 }
 
 .header__inner {
-  padding: 16px 0;
+  padding: 15px 0 20px;
   display: flex;
   align-items: center;
 
   @media #{$tablet} {
-    padding: 30px 0;
+    padding: 22px 0;
   }
 }
 
 .header__buttons {
   flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   text-align: right;
-  margin-right: 14px;
+  margin-right: 10px;
 
   @media #{$tablet} {
     margin-right: 44px;
   }
 
   a {
-    margin-right: 9px;
+    margin-right: 10px;
 
     @media #{$tablet} {
       margin-right: 51px;
@@ -41,11 +44,20 @@
   }
 }
 
+.header__link {
+  display: block;
+
+  @media #{$tablet} {
+    width: 48px;
+    height: 47px;
+  }
+}
+
 .header__link--search {
   svg {
     @media #{$tablet} {
-      width: 48px;
-      height: 47px;
+      width: 58px;
+      height: 50px;
     }
   }
 }
@@ -54,7 +66,7 @@
   svg {
     @media #{$tablet} {
       width: 42px;
-      height: 49px;
+      height: 50px;
     }
 
     @media #{$desktop-large} {
@@ -74,8 +86,8 @@
   z-index: 999;
   display: block;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   border: none;
   border-radius: 0;
@@ -91,14 +103,14 @@
 
 
   @media #{$tablet} {
-    width: 60px;
-    height: 40px;
+    width: 66px;
+    height: 60px;
   }
 
   svg{
     @media #{$tablet} {
-      width: 60px;
-      height: 40px;
+      width: 66px;
+      height: 60px;
     }
 
     path {

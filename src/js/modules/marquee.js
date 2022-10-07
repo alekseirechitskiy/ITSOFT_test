@@ -2,7 +2,7 @@ import $ from 'jquery';
 import { } from 'jquery.marquee'
 
 export default function () {
-  $('#marquee-demo').marquee({
+  $('#marquee').marquee({
     duration: 10000,
     //gap in pixels between the tickers
     gap: 0,

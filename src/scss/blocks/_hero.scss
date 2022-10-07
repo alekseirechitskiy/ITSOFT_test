@@ -1,7 +1,7 @@
 .hero {
   background-image: url("@img/hero-bg.svg");
   background-repeat: no-repeat;
-  background-position: center 15%;
+  background-position: center 7%;
   background-size: contain;
   height: calc(100vh - 72px);
 
@@ -14,10 +14,11 @@
 
   @media #{$desktop} {
     background-image: url("@img/hero-bg-big.svg");
-    background-size: contain;
+    // background-size: contain;
     background-position: top;
     height: auto;
-    margin-top: 113px;
+    margin-top: 135px;
+    margin-bottom: 97px;
   }
 
   @media #{$desktop-large} {
@@ -25,7 +26,15 @@
     background-position: bottom;
     height: 100vh;
     margin-top: 0;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
+  }
+}
+
+.hero__wrapper {
+  @media #{$desktop} {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
 
@@ -33,6 +42,12 @@
   @media #{$tablet} {
     display: flex;
     padding-top: 30px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 5px;
+    padding-bottom: 7px;
+    // padding-bottom : 30px;
   }
 
   @media #{$desktop-large} {
@@ -49,11 +64,14 @@
   line-height: 90%;
   color: $black;
   max-width: 292px;
+  padding: 0 15px;
 
   @media #{$desktop} {
     font-size: 55px;
     max-width: 360px;
-    margin-bottom: 240px;
+    margin-bottom: 226px;
+    padding: 0;
+    line-height: 100%;
   }
 }
 
@@ -79,7 +97,7 @@
 
 .hero__list-item:first-child {
   &::before {
-    top: -30px;
+    top: -23px;
     width: 67px;
     height: 67px;
     background-image: url("@img/icons/find.svg");
@@ -88,7 +106,7 @@
 
 .hero__list-item:nth-child(2) {
   &::before {
-    top: -30px;
+    top: -19px;
     width: 68px;
     height: 67px;
     background-image: url("@img/icons/instruction.svg");
@@ -96,6 +114,8 @@
 }
 
 .hero__list-item:last-child {
+  margin-top: 90px;
+
   &::before {
     top: -30px;
     width: 68px;
@@ -108,9 +128,10 @@
   font-size: $font-size-medium;
   line-height: 21px;
   color: $main;
+  text-decoration: underline;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -122,7 +143,7 @@
   }
 
   @media #{$desktop-mid} {
-    margin-top: 100px;
+    margin-top: 73px;
   }
 
   @media #{$desktop-large} {

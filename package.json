@@ -1,14 +1,16 @@
 {
+    "homepage": "https://alekseirechitskiy.github.io/ITSOFT_test",
     "name": "gulp-2022",
     "version": "1.0.0",
     "description": "Aleksei's build",
     "main": "gulpfile.js",
     "type": "module",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
         "dev": "gulp",
         "build": "gulp build --build",
         "zip": "gulp deployZIP --build",
-        "deploy": "gulp deployFTP --build",
         "svgSprite": "gulp sprite"
     },
     "author": "Aleksei Rechitskiy",
@@ -55,9 +57,9 @@
         "not < 0.25%"
     ],
     "dependencies": {
+        "gh-pages": "^4.0.0",
         "jquery": "^3.6.1",
         "jquery.marquee": "^1.6.0",
-        "sass-loader": "^13.0.2",
         "slick-carousel": "^1.8.1",
         "swiper": "^8.4.2"
     }

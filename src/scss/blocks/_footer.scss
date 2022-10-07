@@ -8,13 +8,13 @@
   font-size: $font-size-medium;
   line-height: 100%;
   letter-spacing: 0.04em;
-  color: #540C50;
+  color: $main;
   opacity: 0.8;
   margin-bottom: 20px;
   
   @media #{$tablet} {
     font-size: 31px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 }
 
@@ -24,13 +24,25 @@
 
   @media #{$tablet} {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 40px;
   }
 
   @media #{$desktop} {
-    column-gap: 112px;
+    display: grid;
+    grid-template-columns:  1fr 335px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+  
+  @media #{$desktop} {
+    column-gap: 60px;
+    row-gap: 10px;
+  }
+
+  @media #{$desktop-mid} {
+    column-gap: 100px;
   }
 }
 
@@ -43,13 +55,22 @@
 }
 
 .footer__report{
-  @media #{$tablet} {
+  @media #{$desktop} {
     grid-row: span 2;
   }
 }
 
 .footer__social {
   margin-bottom: 15px;
+
+  @media #{$tablet} {
+    margin-top: -12px;
+    grid-column: span 2;
+  }
+
+  @media #{$desktop} {
+    grid-column: span 1
+  }
 }
 
 .footer__address {
@@ -68,13 +89,12 @@
   display: flex;
   justify-content: flex-start;
 
-
   @media #{$tablet} {
     justify-content: flex-start;
   }
 
   svg {
-    margin-right: 15px;
+    margin-right: 14px;
     flex-shrink: 0;
     
     path {
@@ -91,16 +111,21 @@
     color: $grey-footer-second;
     transition: color 0.3s;
 
-    br {
-      display: none;
-    }
-
     @media #{$tablet} {
-      br {
-        display: block;
-      }
       width: 100%;
     }
+
+    @media #{$desktop-mid} {
+      font-size: $font-size-normal;
+    }
+    
+    br {
+      display: none;
+      @media #{$tablet} {
+        display: block;
+      }
+    }
+
   }
 
   &:hover {
@@ -109,6 +134,7 @@
         fill: $main;
       }
     }
+
     span{
       color: $main;
     }

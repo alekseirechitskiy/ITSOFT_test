@@ -8,7 +8,8 @@
     @@include('html/_header.html',{})
 
     <section class="hero">
-      <div class="container">
+      <!-- <div class="container"> -->
+        <div class="hero__wrapper">
         <div class="hero__inner">
           <div class="hero__info">
             <h1 class="hero__heading">
@@ -26,17 +27,25 @@
               </li>
             </ul>
           </div>
+        <!-- </div>
+      </div> -->
+
+
           <div class="hero__slider">
             <div class="hero-slider">
               <div class="hero-slider__slide">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.png">
+                  <!-- <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.webp" type="images/webp"> 
+                  <source srcset="@img/hero-1-tablet.webp" type="images/webp">  -->
+                  <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.png"> 
                   <img class="hero-slider__image" src="@img/hero-1.png" >
                 </picture>
               </div>
               <div class="hero-slider__slide">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.png">
+                  <!-- <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.webp" type="images/webp"> 
+                  <source srcset="@img/hero-1-tablet.webp" type="images/webp">  -->
+                  <source media="(min-width: 768px)" srcset="@img/hero-1-tablet.png"> 
                   <img class="hero-slider__image" src="@img/hero-1.png" >
                 </picture>
               </div>
@@ -48,7 +57,7 @@
         </div>
       </div>
     </section>
-    <section class="marquee" id="marquee-demo">
+    <section class="marquee" id="marquee">
       <div class="marquee__wrapper">
         <a href="#" class="marquee__text"> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>> получить скидку 10% >>>&nbsp;</a>
       </div>
@@ -86,16 +95,16 @@
         <div class="actions__inner">
           <div class="actions__info">
             <h2 class="actions__title title">Комплексное действие</h2>
-            <p class="actions__text">Венарус показан для терапии симптомов хронических заболеваний вен (устранения и облегчения симптомов).</p>
+            <p class="actions__text">Венарус показан для терапии симптомов хронических заболеваний вен (устранения<br>и облегчения симптомов).</p>
           </div>
           <ul class="actions__list">
             <li class="actions__item">
               <a class="actions__item-link link" href="#">Подробнее ></a>
-              <p class="actions__item-text">Помогает предотвратить судороги</p>
+              <p class="actions__item-text">Помогает <br>предотвратить судороги</p>
             </li>
             <li class="actions__item">
               <a class="actions__item-link link" href="#">Подробнее ></a>
-              <p class="actions__item-text">Способствует снижению тяжести в ногах</p>
+              <p class="actions__item-text">Способствует <br>снижению тяжести <br>в ногах</p>
             </li>
             <li class="actions__item">
               <a class="actions__item-link link" href="#">Подробнее ></a>
@@ -103,11 +112,11 @@
             </li>
             <li class="actions__item">
               <a class="actions__item-link link" href="#">Подробнее ></a>
-              <p class="actions__item-text">Помогает уменьшить отеки</p>
+              <p class="actions__item-text">Помогает <br>уменьшить отеки</p>
             </li>
             <li class="actions__item">
               <a class="actions__item-link link" href="#">Подробнее ></a>
-              <p class="actions__item-text">Оказывает ангиопротекторное и венотонизурующее действие</p>
+              <p class="actions__item-text">Оказывает ангиопротекторное <br>и венотонизурующее действие</p>
             </li>
           </ul>
         </div>
@@ -194,7 +203,7 @@
               Мнение специалистов
             </h2>
             <p class="opinions__text">
-              Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания вен.
+              Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания <br>вен.
             </p>
           </div>
           <div class="opinions__slider opinions-slider">
@@ -235,7 +244,7 @@
           <div class="information__inner">
             <div class="information__info">
               <h2 class="information__title title">Полезная информация</h2>
-              <p class="information__text"><span>ВЕНАРУС</span> — НАДЕЖНЫЙ ПОМОЩНИК В ЛЕЧЕНИИ ВАРИКОЗА, ХРАНИТЕЛЬ ЖЕНСКИХ НОГ НА ПУТИ К ЕЕ МЕЧТЕ!</p>
+              <p class="information__text"><span>ВЕНАРУС</span> — НАДЕЖНЫЙ ПОМОЩНИК В ЛЕЧЕНИИ ВАРИКОЗА, ХРАНИТЕЛЬ ЖЕНСКИХ НОГ НА ПУТИ <br>К ЕЕ МЕЧТЕ!</p>
             </div>
             <div class="information__grid information-grid">
               <a class="information-grid__item" href="#">
@@ -255,7 +264,7 @@
               </a>
               <a class="information-grid__item" href="#">
                 <p class="information-grid__item-text">
-                  Факты о варикозе
+                  Факты <br>о варикозе
                 </p>
               </a>
             </div>

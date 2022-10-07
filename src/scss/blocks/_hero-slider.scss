@@ -2,7 +2,7 @@
   min-width: 0;
   text-align: center;
   margin-top: -10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   position: relative;
 
   @media #{$tablet} {
@@ -12,11 +12,13 @@
 
   @media #{$desktop} {
     margin-top: -15px;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
   }
   
   .slick-list {
     overflow: hidden;
+    // margin-left: -15px;
+    // margin-right: 15px;
   }
 
   .slick-track {
@@ -26,7 +28,7 @@
   .slick-arrow {
     padding: 0;
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     width: 34px;
     height: 34px;
     text-align: center;
@@ -59,7 +61,7 @@
     }
 
     @media #{$desktop} {
-      bottom: -30px;
+      bottom: -23px;
       width: 68px;
       height: 68px;
     }
@@ -70,11 +72,11 @@
   }
 
   .slick-prev {
-    transform: translateX(-41px);
+    transform: translateX(-42px);
     text-align: center;
 
     @media #{$desktop} {
-      transform: translateX(-61px);
+      transform: translateX(-54px);
     }
 
     svg {
@@ -84,8 +86,10 @@
   }
 
   .slick-next {
+    transform: translateX(7px);
+
     @media #{$desktop} {
-      transform: translateX(41px);
+      transform: translateX(46px);
     }
 
     svg {
@@ -99,8 +103,38 @@
   }
 }
 
+.hero-slider__slide {
+  // margin-left: -16px;
+  width: 150%;
+  display: inline-block;
+  margin-top: -5px;
+  height: 276px;
+
+
+  @media (min-width: 500px) {
+    height: auto;
+  }
+
+  @media #{$desktop} {
+    // height: 489px;
+    // width: 938px;
+  }
+
+  @media #{$desktop-mid} {
+    width: 116% !important;
+  }
+}
+
 .hero-slider__image {
+  height: 100%;
+  width: 150%;
+  object-fit: cover;
+  object-position: center;
+
   @media #{$tablet} {
     margin-left: -100px;
+  }
+  @media #{$desktop-mid} {
+    margin-left: -235px;
   }
 }

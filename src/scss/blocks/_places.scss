@@ -3,7 +3,8 @@
   position: relative;
 
   @media #{$desktop} {
-    padding-top: 100px;
+    padding-top: 95px;
+    padding-bottom: 94px;
   }
 
   @media #{$desktop-large} {
@@ -37,7 +38,8 @@
   width: 100%;
 
   @media #{$desktop} {
-    width: 240px;
+    width: 260px;
+    margin-right: 33px;
   }
 }
 
@@ -45,8 +47,8 @@
   margin-bottom: 20px;
 
   @media #{$desktop} {
-    margin-bottom: 26px;
-    max-width: 100px;
+    margin-bottom: 32px;
+    max-width: 130px;
   }
 }
 
@@ -56,6 +58,26 @@
   line-height: 154.8%;
   color: $grey-text;
   margin-bottom: 20px;
+
+  @media #{$tablet} {
+    font-size: $font-size-normal;
+
+  }
+
+
+  br {
+    display: none;
+    
+    @media #{$tablet} {
+      display: block;
+    }
+  }
+}
+
+.places__image {
+  @media #{$desktop-mid}{
+    margin-top: -68px;
+  }
 }
 
 .places__links {
@@ -69,6 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: -11px;
   }
 }
 

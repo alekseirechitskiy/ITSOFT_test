@@ -7,7 +7,7 @@
   @media #{$tablet} {
     padding: 25% 0 25%;
     height: 858px;
-    margin-top: -200px;
+    margin-top: -135px;
   }
 
   @media #{$desktop-large} {
@@ -39,6 +39,7 @@
   }
 
   @media #{$desktop} {
+    margin-top: -10px;
     margin-bottom: 0;
     flex-shrink: 0;
     width: 315px;
@@ -78,7 +79,7 @@
   }
 
   @media #{$desktop-mid} {
-    margin-top: 25px;
+    margin-top: 34px;
     @include btn($white, $white);
   }
 }

@@ -3,13 +3,13 @@
   align-items: center;
   justify-content: space-around;
 
-  @media #{$tablet} {
+  @media #{$desktop} {
     justify-content: flex-start;
   }
 }
 
 .social__link {
-  @media #{$tablet} {
+  @media #{$desktop} {
     margin-right: 40px;
   }
 
