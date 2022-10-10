@@ -75,6 +75,8 @@
 }
 
 .places__image {
+  height: auto;
+
   @media #{$desktop-mid}{
     margin-top: -68px;
   }
