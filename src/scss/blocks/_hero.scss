@@ -10,11 +10,11 @@
     background-size: cover;
     height: 550px;
     margin-top: 113px;
+    animation: bg-animation 15s ease-in-out infinite;
   }
 
   @media #{$desktop} {
     background-image: url("@img/hero-bg-big.svg");
-    // background-size: contain;
     background-position: top;
     height: auto;
     margin-top: 135px;
@@ -26,7 +26,6 @@
     background-position: bottom;
     height: 100vh;
     margin-top: 0;
-    // margin-bottom: 100px;
   }
 }
 
@@ -168,4 +167,28 @@
     width: 263px;
     transform: translateX(30px);
   }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-size: 100%;
+    // background-position: 50% 50%;
+    background-position: 50% 50%;
+
+  }
+  25% {
+    background-size: 105%;
+    background-position: 100% 50%;
+  }
+  70% {
+    background-size: 105%;
+    background-position: 0 50%;
+  }
+  100% {
+    background-size: 100%;
+    background-position: 50% 50%;
+
+  }
+
+
 }
