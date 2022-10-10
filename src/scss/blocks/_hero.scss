@@ -15,7 +15,7 @@
 
   @media #{$desktop} {
     background-image: url("@img/hero-bg-big.svg");
-    background-position: top;
+    // background-position: top;
     height: auto;
     margin-top: 135px;
     margin-bottom: 97px;
@@ -23,7 +23,7 @@
 
   @media #{$desktop-large} {
     background-size: cover;
-    background-position: bottom;
+    // background-position: bottom;
     height: 100vh;
     margin-top: 0;
   }
@@ -172,23 +172,19 @@
 @keyframes bg-animation {
   0% {
     background-size: 100%;
-    // background-position: 50% 50%;
     background-position: 50% 50%;
 
   }
   25% {
     background-size: 105%;
-    background-position: 100% 50%;
+    background-position: 0 50%;
   }
   70% {
-    background-size: 105%;
-    background-position: 0 50%;
+    background-size: 100%;
+    background-position: 100% 50%;
   }
   100% {
     background-size: 100%;
     background-position: 50% 50%;
-
   }
-
-
 }
